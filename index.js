@@ -25,6 +25,7 @@ async function sendMessage(message) {
 }
 
 client.on("qr", (qr) => {
+  console.log(qr);
   qrcode.generate(qr, { small: true });
 });
 
